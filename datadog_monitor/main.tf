@@ -4,7 +4,7 @@ resource "datadog_monitor" "main" {
 
   message = <<EOF
 ${var.message}
-The docs are at ${var.datadog_docs}${var.doc}
+The docs are at ${var.docs_prefix}${var.docs_name}
 ${var.datadog_notify}
 EOF
 

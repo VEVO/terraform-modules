@@ -30,8 +30,12 @@ variable "no_data_timeframe" {
   default     = 60
 }
 
-variable "datadog_docs" {
+variable "docs_prefix" {
   description = "Parent path to the datadog alerts docs"
+}
+
+variable "docs_name" {
+  description = "Combined with docs_prefix to make a clickable URL to the support docs"
 }
 
 variable "datadog_notify" {
