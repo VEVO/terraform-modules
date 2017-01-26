@@ -32,10 +32,12 @@ variable "no_data_timeframe" {
 
 variable "docs_prefix" {
   description = "Parent path to the datadog alerts docs"
+  default     = "http://blah"
 }
 
 variable "docs_name" {
   description = "Combined with docs_prefix to make a clickable URL to the support docs"
+  default     = "-fod"
 }
 
 variable "datadog_notify" {
