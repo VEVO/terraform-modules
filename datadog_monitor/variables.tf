@@ -29,3 +29,7 @@ variable "no_data_timeframe" {
   description = "The number of minutes before a monitor will notify when data stops reporting. Must be at least 2x the monitor timeframe for metric alerts or 2 minutes for service checks."
   default     = 60
 }
+
+variable "datadog_docs" {
+  description = "Parent path to the datadog alerts docs"
+}
