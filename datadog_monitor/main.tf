@@ -2,7 +2,7 @@ resource "datadog_monitor" "main" {
   name = "Terraform Managed: ${var.name}"
   type = "${var.type}"
 
-  message = ${var.message}
+  message = "${var.message}"
 
   query = "${var.query}"
 
