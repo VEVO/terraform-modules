@@ -33,3 +33,7 @@ variable "no_data_timeframe" {
 variable "datadog_docs" {
   description = "Parent path to the datadog alerts docs"
 }
+
+variable "datadog_notify" {
+  description = "Who to notify when the alert triggers.  In datadog @mention style"
+}
