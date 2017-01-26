@@ -2,11 +2,7 @@ resource "datadog_monitor" "main" {
   name = "Terraform Managed: ${var.name}"
   type = "${var.type}"
 
-  message = <<EOF
-${var.message}
-The docs are at ${var.docs_prefix}${var.docs_name}
-${var.datadog_notify}
-EOF
+  message = ${var.message}
 
   query = "${var.query}"
 
