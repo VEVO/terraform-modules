@@ -12,4 +12,5 @@ resource "datadog_monitor" "main" {
   notify_no_data    = "${var.notify_no_data}"
   include_tags      = true
   notify_audit      = false
+  evaluation_delay  = 0
 }
