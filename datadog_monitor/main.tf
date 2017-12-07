@@ -13,4 +13,6 @@ resource "datadog_monitor" "main" {
   include_tags      = true
   notify_audit      = false
   evaluation_delay  = 0
+
+  count = "${var.count}"
 }
