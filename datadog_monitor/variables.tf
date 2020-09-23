@@ -30,7 +30,3 @@ variable "no_data_timeframe" {
   default     = 60
 }
 
-variable "count" {
-  description = "Control whehter the resource is created or not."
-  default     = 1
-}
