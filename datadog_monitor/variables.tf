@@ -30,3 +30,7 @@ variable "no_data_timeframe" {
   default     = 60
 }
 
+variable "deploy" {
+  description = "Whether or not the configuration should be deployed."
+  default     = true
+}

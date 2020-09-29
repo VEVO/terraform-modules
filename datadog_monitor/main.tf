@@ -14,4 +14,5 @@ resource "datadog_monitor" "main" {
   notify_audit      = false
   evaluation_delay  = 0
 
+  count = "${var.deploy ? 1 : 0}"
 }
