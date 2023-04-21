@@ -17,7 +17,7 @@ variable "query" {
 
 variable "thresholds" {
   description = "The monitor thresholds which indicate critical and warning levels"
-  type        = "map"
+  type        = map(string)
 }
 
 variable "notify_no_data" {
